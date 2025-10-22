@@ -41,8 +41,7 @@ module sync_fifo #(
   end
 
   // Full and empty flags
-  assign full  = ( (wr_ptr[ADDR_WIDTH] != rd_ptr[ADDR_WIDTH]) &&
-                   (wr_ptr[ADDR_WIDTH-1:0] == rd_ptr[ADDR_WIDTH-1:0]) );
+  assign full  = ( (wr_ptr[ADDR_WIDTH] != rd_ptr[ADDR_WIDTH]) && (wr_ptr[ADDR_WIDTH-1:0] == rd_ptr[ADDR_WIDTH-1:0]) );
 
   assign empty = (wr_ptr == rd_ptr);
 

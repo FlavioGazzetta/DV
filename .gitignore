@@ -1,6 +1,6 @@
 # Verilator build output
 obj_dir/
-wave.vcd
+*.vcd
 
 # Editor/OS junk
 *.log
