@@ -1,0 +1,9 @@
+# Verilator build output
+obj_dir/
+wave.vcd
+
+# Editor/OS junk
+*.log
+*.swp
+*.DS_Store
+*~
